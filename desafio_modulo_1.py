@@ -42,7 +42,7 @@ pred_y = kmeans.fit_predict(X2)
 
 plt.style.use('fivethirtyeight')
 plt.figure(1, figsize=[15,6])
-plt.scatter(X2[:,0], X2[:,1], s=200, alpha=0.5)
+plt.scatter(X2[:,0], X2[:,1], c=pred_y, s=200, alpha=0.5)
 plt.grid()
 
 plt.scatter(kmeans.cluster_centers_[:,0], kmeans.cluster_centers_[:,1], s=200, c='red')
@@ -60,7 +60,7 @@ pred_y = kmeans.fit_predict(X6)
 
 plt.style.use('fivethirtyeight')
 plt.figure(1, figsize=[15,6])
-plt.scatter(X6[:,0], X6[:,1], s=200, alpha=0.5)
+plt.scatter(X6[:,0], X6[:,1], c=pred_y, s=200, alpha=0.5)
 plt.grid()
 
 plt.scatter(kmeans.cluster_centers_[:,0], kmeans.cluster_centers_[:,1], s=200, c='red')
@@ -103,7 +103,7 @@ print(kmeans.inertia_)
 
 plt.style.use('fivethirtyeight')
 plt.figure(1, figsize=[15,6])
-plt.scatter(X2[:,0], X2[:,1], s=200, alpha=0.5)
+plt.scatter(X2[:,0], X2[:,1], c=pred_y, s=200, alpha=0.5)
 plt.grid()
 
 plt.scatter(kmeans.cluster_centers_[:,0], kmeans.cluster_centers_[:,1], s=200, c='red')
